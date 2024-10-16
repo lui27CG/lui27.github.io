@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPlaza</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="" class="logo">
+                <img src="images/logotipo.jpg" alt="Agrizona"></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="#lista-1">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#articulos">Artículos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2" alt="carrito">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/rb_12425.png" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas especiales</h1>
+                <p>Descubre nuestros productos seleccionados para TI</p>
+                <a href="page2.html" class="btn-1">Información</a>
+            </div>
+        </div>
+    </header>
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="https://www.empresagro.com/mt-content/uploads/2020/04/fertilizante-organico-silcaphos-bulto.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3> 50% DTO EN TODO FERTILIZANTES</h3>
+                <h4>+10% pagando con TARJETA DE CRÉDITO</h4>
+                <a href="#" class="btn-2">Más información</a>
+            </div>  
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/046/572/092/small_2x/surprised-young-woman-in-red-dress-on-transparent-background-png.png" width="300px" height="200px" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>CYBERWOW</h3>
+                <h4>Del 15 al 20 de octubre</h4>
+                <a href="#" class="btn-2">Más información</a>
+            </div>  
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="https://www.iralda.com/wp-content/uploads/2016/06/2.Animales-de-granja.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>¡Llévate 2X1 en todo ALIMENTO PARA VACAS Y CABALLOS!</h3>
+                <h4>Solo por HOY</h4>
+                <a href="#" class="btn-2">Más información</a>
+            </div>  
+        </div>
+    </section>
+    <main class="products container" id="lista-1">
+        <h2>PRODUCTOS</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2019/07/ABAMEX-WEB_11zon-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>ABAMEX 1.8 EC x 1LT</h3>
+                    <p>Abacmentina 18g/L</p>
+                    <p class="precio">S/90.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/05/OLITECH-ACEITE-MINERAL_11zon-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>ACEITE MINERAL OIL TECH GALON X 5 LTS</h3>
+                    <p>Aceite mineral refinado 80%</p>
+                    <p class="precio">S/75.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/10/acido-fosforico-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>ÁCIDO FOSFORICO 85% INNOPHOS x50KG</h3>
+                    <p>85% H3PO4</p>
+                    <p class="precio">S/390.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/06/A-P-U-WEB_11zon-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>APU X 1LT</h3>
+                    <p>Inductores Bio hormonales, promotores fenológicos, Activadores Enzimáticos y L-aminoácidos.</p>
+                    <p class="precio">S/125.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/10/AMINO-Q-50-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>AMINO Q-50 x 20LT</h3>
+                    <p>Aminoácidos Totales 50.0 %+Aminoácidos Libres 38.0 %+(N) 10.0 %+(P2O5) 0.80 %+(K2O) 1.30 %</p>
+                    <p class="precio">S/135.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2019/08/PROCESADO-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>AZUFRE PANTERA PROCESADO POLVO SECO x 25KG</h3>
+                    <p>Azufre 930 g/kg</p>
+                    <p class="precio">S/100.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/09/basacote-1Kg-Fertinnova-web_11zon-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>BASACOTE PLUS 6M x 1KG</h3>
+                    <p>N 16% + P2O5 8% + K2O 12%</p>
+                    <p class="precio">S/57.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/09/BOLSAS-ALMASIGO-VARIAS-MEDIDAS-MARUPLAST-WEB_11zon-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>BOLSAS ALMASIGO x VARIAS MEDIDAS</h3>
+                    <p>12 unidades</p>
+                    <p class="precio">S/60.50</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.agroplaza.pe/wp-content/uploads/2024/09/BORAX-DECAHIDRATADO-25KG-BORAX-WEB_11zon-1024x1024.webp" width="auto" height="auto" >
+                <div class="product-txt">
+                    <h3>BORAX DECAHIDRATADO x 25KG</h3>
+                    <p>NA2 + B4O7 + 10H2O</p>
+                    <p class="precio">S/150.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id ="6">Agregar al carrito</a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <section class="icons container" id="nosotros">
+        <h2>NOSOTROS</h2>
+        <div class="icons-content">
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="https://cdn-icons-png.freepik.com/256/1042/1042834.png?ga=GA1.1.593226750.1728799033" width="140px" height="95px" alt="">
+                </div>
+                <div class="icon-text">
+                    <h3>MÁS DE 10 SEDES</h3>
+                    <p>en Lima, Trujillo y en todo el país</p>
+                </div>
+            </div>
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="https://cdn-icons-png.freepik.com/256/5291/5291095.png?ga=GA1.1.593226750.1728799033" width="170px" height="90px" alt="">
+                </div>
+                <div class="icon-text">
+                    <h3>DE LA MANO DEL PLANETA</h3>
+                    <p>100% contribuyentes a la sostenibilidad ambiental</p>
+                </div>
+            </div>
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="https://cdn-icons-png.freepik.com/256/16491/16491554.png?ga=GA1.1.593226750.1728799033&semt=ais_hybrid" width="170px" height="90px" alt="">
+                </div>
+                <div class="icon-text">
+                    <h3>SEGUIMOS VIGENTES</h3>
+                    <p>Somos pioneros en la industria y los favoritos de muchos peruana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container" id="articulos">
+        <h2>ARTÍCULOS</h2>
+        <h3>Nuestra misión va más allá de proveer los mejores productos. También proveemos artículos a los que puedes acceder dando clic sobre la imagen</h3>
+        <div class = "blog-content"> 
+            <div class="blog-1">
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdialogue.earth%2Fes%2Falimentos%2F57839-crisis-de-fertilizantes-los-problemas-en-peru-para-satisfacer-su-demanda%2F&psig=AOvVaw0ctJfL8QKQh7C9pQRRNGj2&ust=1728942850233000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCMjZgZmsjIkDFQAAAAAdAAAAABAE" target="_blank">
+                    <img src="https://dialogue.earth/content/uploads/2022/09/plantacion-papas-peru_Alamy_ER5667-scaled.jpg" alt="" >
+                </a>
+                <h3>Crisis de fertilizantes: los problemas en Perú para satisfacer su demanda</h3>
+                <p>
+                    Una encuesta reciente del Ministerio de Desarrollo Agrario y Riego (Migradi) de Perú indica que en la siguiente temporada dejarán de sembrarse 20 mil hectáreas de arroz, papa y cebolla. La crisis mundial de fertilizantes viene afectando a pequeños y medianos agricultores en el país, que según la Encuesta Nacional Agropecuaria 2019, son 2 millones 244 mil. Y de ellos, casi la mitad (46,7%) utiliza fertilizantes químicos. 
+                </p>
+            </div>
+            <div class="blog-1">
+                <a href="https://www.elsaltodiario.com/agricultura/agricultura-mundial-cuerda-floja-fertilizantes-quimicos" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8b0HMCcFaz-rgi_Qh-dFIt4nti0tQ5L-bsg&s" alt="" >
+                </a>
+                <h3>La agricultura mundial, en la cuerda floja de los fertilizantes químicos</h3>
+                <p>
+                    La creciente preocupación por el cambio climático y, en menor medida, por el agotamiento de los combustibles fósiles, han dirigido el foco del debate público hacia los impactos y la disponibilidad de los recursos energéticos. Sin embargo, los problemas de escasez a los que tendrán que hacer frente las sociedades industriales en las próximas décadas afectan a muchos ámbitos distintos.
+                </p>
+            </div>
+            <div class="blog-1">
+                <a href="https://www.elperuano.pe/noticia/158331-dictan-norma-para-facilitar-adquisicion-de-fertilizantes-del-mercado-internacional" target="_blank">
+                    <img src="https://elperuano.pe/fotografia/thumbnail/2022/05/29/000172811M.jpg" alt="" >
+                </a>
+                <h3>Dictan norma de adquisición de fertilizantes internacionales</h3>
+                <p>
+                    Como parte del proceso de compra de fertilizantes en el mercado internacional, el Ministerio de Desarrollo Agrario y Riego (Midagri), a través del programa Agro Rural, aprobó los lineamientos para la contratación de bienes y servicios con proveedores no domiciliados en el país. La resolución se sustenta en la aplicación del artículo 5 de la Ley No. 30225 Ley de Contrataciones del Estado en el Programa de Desarrollo Productivo Agrario Rural (Agro Rural).
+                </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>CONTÁCTANOS</h3>
+                <ul>
+                    <il><a>Número de celular: 920347823</a></il>
+                    <il><a>Tel: (044) 232338</a></il>
+                    <il><a>Correo: agrozona@unitru.edu.pe</a></il>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>ENLACES RÁPIDOS</h3>
+                <ul>
+                    <il><a href="#">Inicio</a></il>
+                    <il><a href="#lista-1">Productos</a></il>
+                    <il><a href="#nosotros">Nosotros</a></il>
+                    <il><a href="#articulos">Artículos</a></il>
+                    <il><a>Centro de Ayuda</a></il>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>SÍGUENOS</h3>
+                <ul>
+                    <il><a>FB: Agrizona OF </a></il>
+                    <il><a>IG: agrizona.trux</a></il>
+                    <il><a>Linkedin: WeAreAgrizona</a></il>
+                    <il><a>YT: Agrizona Store</a></il>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>ENCUENTRANOS EN</h3>
+                <ul>
+                    <il><a>Calle Las Persionas #2413 - Centro Cívico</a></il>
+                    <il><a>Frente a Gobierno Regional La Libertad</a></il>
+                    <il><a>Trujillo - Perú</a></il>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scrip.js"></script>
+</body>
+</html>
